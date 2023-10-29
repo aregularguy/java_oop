@@ -1,3 +1,4 @@
+import polymorphism.compileTime;
 class base {
     public void breakk() {
         System.out.println("this is base class");
@@ -21,5 +22,8 @@ public class Main {
         child cd = new child();
         cd.breakk();
         cd.sing();
+        
+        System.out.println("the multiply of 3 and 5 is " + compileTime.multiply(3,5));
+        System.out.println("the multiply of 3 and 5 is " + compileTime.multiply(3.5,5.4));
     }
 }
